@@ -101,7 +101,7 @@ function onQRCodeButtonClick() {
   }
 
   // Generate QR Code with a link containing the new end time
-  new QRCode(document.getElementById("qrcode"), "http://192.168.5.206:5555/index.html?timer=" + newEndTime);
+  new QRCode(document.getElementById("qrcode"), "https://timeout-sample.netlify.app/index.html?timer=" + newEndTime);
 
   // Remove the QR Code button
   document.getElementById("qr-code-button").remove();
